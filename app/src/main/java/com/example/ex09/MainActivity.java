@@ -1,6 +1,7 @@
 package com.example.ex09;
 
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -21,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         wV1= findViewById(R.id.wV1);
         wV1.setWebViewClient(new MyWebViewClient());
+        stringUrl="http://www.walla.co.il/";
+
+
+    }
+
+    public void go(View view) {
+        wV1.loadUrl(stringUrl);
 
     }
 
